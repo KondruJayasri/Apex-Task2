@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importing Google Fonts for stylish text -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <h1>Welcome to the Art Gallery</h1>
+            <p>Explore a collection of paintings that celebrate the beauty of nature, creativity, and passion.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Artistic Nature</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dcb5o9qng/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731088926/lpartist_carlosdelgado_oeuvre7_awew9s.webp" alt="Painting 1">
+                <h3>Sunset Bliss</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dcb5o9qng/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731088930/lpartist_carlosdelgado_oeuvre5_nl2j6i.webp" alt="Painting 2">
+                <h3>Emotion Peaks</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dcb5o9qng/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731088491/great-wave-off-kanagawa_jd7q3v.jpg" alt="Painting 3">
+                <h3>Ocean Waves</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dcb5o9qng/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731088435/Farahnaz-Samari-Power-of-Love-Acrylic-36x36-in_fg7ngn.jpg" alt="Painting 4">
+                <h3>Coloured Dreams</h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Art Consultations</h3>
+                <img src="https://res.cloudinary.com/dcb5o9qng/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731089532/art-consulting_exhibition-projects_02_uvyjlz.jpg" alt="Custom Framing">
+                <p>Get personalized advice for your art collection.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Framing</h3>
+                <img src="https://res.cloudinary.com/dcb5o9qng/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731088905/13-_Power_Oiloncanvas_200cmX220cm_2023-2_naofdy.webp" alt="Custom Framing">
+                <p>Tailored framing for your artwork.</p>
+            </div>
+            <div class="service-card">
+                <h3>Art Workshops</h3>
+                <img src="https://res.cloudinary.com/dcb5o9qng/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731088917/Carlos-Delgado-Matiz-Art-Gallery-Barcelona_r91vz9.webp" alt="Custom Framing">
+                <p>Join our creative workshops and develop new skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Create Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Submit</button>
+        </form>
+    
+    </section>
+    <section id="imageSection" class="grid-item" style="display:none;">
+        <h2>Submit an Image</h2>
+        <form id="imageForm">
+            <input type="url" id="imageUrl" placeholder="Paste Image URL" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="imagePreview" style="margin-top: 20px;">
+            <!-- The image will be displayed here after submission -->
+        </div>
+    </section>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
